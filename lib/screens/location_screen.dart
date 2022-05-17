@@ -65,7 +65,8 @@ class _LocationScreenState extends State<LocationScreen> {
                   ),
                   TextButton(
                     onPressed: () async {
-                      var typedName = await Navigator.push(context,
+                      var typedName = await Navigator.push(
+                          context, //recieving Values From pop
                           MaterialPageRoute(builder: (context) {
                         return CityScreen();
                       }));
