@@ -2,7 +2,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class NetworkHelper {
-  final String url; //use Uri.dataFromString(String)
+  final String url; //not use Uri.dataFromString(String) // use Uri.parse(url)
   NetworkHelper(this.url);
   Future getData() async {
     http.Response response = await http.get(Uri.parse(url));
