@@ -10,5 +10,6 @@ Weather App
 - [Flutter Spinkit Package](https://pub.dev/packages/flutter_spinkit) //for Loading Animation
 - [Flutter TypeAhead Package](https://pub.dev/packages/flutter_typeahead) //later AutoComplete TextField & AutoComplete Search for cities
 - [https://openweathermap.org/api]
+- [Navigate with named routes](https://docs.flutter.dev/cookbook/navigation/named-routes)
 
 
