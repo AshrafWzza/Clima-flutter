@@ -8,7 +8,7 @@ Weather App
 - [http Package](https://pub.dev/packages/http)
 - [http Package documentation](https://pub.dev/documentation/http/latest/)
 - [Flutter Spinkit Package](https://pub.dev/packages/flutter_spinkit) //for Loading Animation
-- [Flutter TypeAhead Package](https://pub.dev/packages/flutter_typeahead)
+- [Flutter TypeAhead Package](https://pub.dev/packages/flutter_typeahead) //later AutoComplete TextField & AutoComplete Search for cities
 - [https://openweathermap.org/api]
 
 
