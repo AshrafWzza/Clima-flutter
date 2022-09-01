@@ -37,6 +37,7 @@ dependencies:
   geolocator: ^8.2.1
   http: ^0.13.4
   flutter_spinkit: ^5.1.0
+  flutter_typeahead: ^4.0.0
 
 dev_dependencies:
   flutter_test:

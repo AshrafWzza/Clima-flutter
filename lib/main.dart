@@ -1,6 +1,7 @@
 import 'package:clima_flutter/screens/loading_screen.dart';
 import 'package:flutter/material.dart';
 
+//Todo: add AutoComplete TextField & AutoComplete Search for cities
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home: LoadingScreen(),
+      home: const LoadingScreen(),
     );
   }
 }

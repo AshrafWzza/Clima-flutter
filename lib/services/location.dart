@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:geolocator/geolocator.dart';
 
 class Location {
@@ -35,7 +35,7 @@ class Location {
             desiredAccuracy: LocationAccuracy.low);
         latitude = position.latitude;
         longitude = position.longitude;
-        print('got it');
+        debugPrint('got it');
       }
     } catch (e) {
       print(e);

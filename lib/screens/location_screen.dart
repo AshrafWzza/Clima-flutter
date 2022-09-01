@@ -4,8 +4,10 @@ import 'package:clima_flutter/services/weather.dart';
 import 'package:clima_flutter/screens/city_screen.dart';
 
 class LocationScreen extends StatefulWidget {
-  LocationScreen(
-      {this.locationWeather}); //make properity to pass data from loadingScreen to locationScreen
+  const LocationScreen({Key? key, this.locationWeather})
+      : super(
+            key:
+                key); //make properity to pass data from loadingScreen to locationScreen
   final locationWeather;
   @override
   _LocationScreenState createState() => _LocationScreenState();
@@ -33,12 +35,13 @@ class _LocationScreenState extends State<LocationScreen> {
     });
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/location_background.jpg'),
+            image: const AssetImage('images/location_background.jpg'),
             fit: BoxFit.cover,
             colorFilter: ColorFilter.mode(
                 Colors.white.withOpacity(0.8), BlendMode.dstATop),
@@ -58,7 +61,7 @@ class _LocationScreenState extends State<LocationScreen> {
                       var weatherData = await weather.getLocationWeather();
                       updateUI(weatherData);
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.near_me,
                       size: 50.0,
                     ),
@@ -68,7 +71,7 @@ class _LocationScreenState extends State<LocationScreen> {
                       var typedName = await Navigator.push(
                           context, //recieving Values From pop
                           MaterialPageRoute(builder: (context) {
-                        return CityScreen();
+                        return const CityScreen();
                       }));
                       if (typedName != null) {
                         var weatherData =
@@ -76,7 +79,7 @@ class _LocationScreenState extends State<LocationScreen> {
                         updateUI(weatherData);
                       }
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.location_city,
                       size: 50.0,
                     ),
@@ -84,7 +87,7 @@ class _LocationScreenState extends State<LocationScreen> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.only(left: 15.0),
+                padding: const EdgeInsets.only(left: 15.0),
                 child: Row(
                   children: <Widget>[
                     Text(
@@ -99,7 +102,7 @@ class _LocationScreenState extends State<LocationScreen> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(right: 15.0),
+                padding: const EdgeInsets.only(right: 15.0),
                 child: Text(
                   '${weather.getMessage(temperature ?? 0)} in $cityName', // ?? sovle-->error: type 'int?' can't be assigned to the parameter type 'int'
                   textAlign: TextAlign.right,
